@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/iview.css">
+</head>
+<body>
+    <div id="app">        
+        <row>
+            <i-col :sm="4">
+                <i-button type="info" long>Info</i-button>
+            </i-col>
+            <i-col :sm="16">
+                <alert type="success">An info prompt</alert>
+            </i-col>
+            <i-col :sm="4">
+                <i-button type="success" long>Success</i-button>
+            </i-col>
+        </row>   
+        <row>
+            <i-col :sm="8">{{ currentDate }}</i-col>
+            <i-col :sm="8">{{ currentStartWeek }}</i-col>
+            <i-col :sm="8">{{ currentEndWeek }}</i-col>
+        </row>
+    </div>
+    <script src="scripts/moment-with-locales.min.js"></script>
+    <script src="scripts/vue.js"></script>
+    <script src="scripts/iview.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
